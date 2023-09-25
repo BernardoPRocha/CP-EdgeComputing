@@ -1,34 +1,51 @@
 # CP-EdgeComputing
 
-Relatório do Projeto: Sensor de Temperatura e Simulação de Sensor de Umidade para Agricultura
+Título do Projeto: Sistema de Monitoramento de Refrigeração para Vinícolas com ESP32 e STH-Comet
 
-Introdução
-O objetivo deste projeto é desenvolver um sistema de monitoramento de temperatura e simulação de umidade para auxiliar fazendeiros na determinação das condições ideais para o cultivo. Utilizando o sensor de temperatura TMP36 e um potenciômetro para simular a umidade, o projeto visa fornecer informações relevantes para o cultivo de plantas, permitindo a tomada de decisões informadas.
+Descrição do Projeto:
 
-Descrição do Projeto
-Os materiais utilizados neste projeto são:
+Introdução:
+O projeto "Sistema de Monitoramento de Refrigeração para Vinícolas com ESP32 e STH-Comet" tem como objetivo proporcionar um controle eficaz e automatizado da refrigeração em vinícolas, integrando o sensor SHT-Comet e o componente STH-Comet da plataforma FIWARE. O sistema utilizará tecnologias de Internet das Coisas (IoT), sensores de temperatura, umidade e controle de resfriamento para garantir que os vinhos sejam armazenados nas condições ideais, preservando sua qualidade e sabor, enquanto o STH-Comet registra e armazena dados contextuais em larga escala.
 
-Arduino Uno
-Sensor de temperatura TMP36;
-Potenciômetro (para simulação de umidade);
-Placa de ensaio (base para os componentes);
-Jumpers para conexões;
+Objetivos:
+O projeto visa atender aos seguintes objetivos:
 
-Montagem do Circuito
-Para montar o circuito, siga as seguintes etapas:
+Controle Preciso da Temperatura e Umidade com ESP32 e SHT-Comet: Utilizar o ESP32 em conjunto com o sensor SHT-Comet para controlar de forma precisa e eficiente a temperatura e umidade nas áreas de armazenamento das vinícolas.
 
-Posicione a placa de ensaio e fixe o Arduino Uno nela.
-Conecte o sensor de temperatura TMP36 na placa de ensaio, utilizando jumpers para ligar o pino Vcc do sensor ao pino 5V do Arduino, o pino GND do sensor ao pino GND do Arduino e o pino Vout do sensor ao pino analógico A0 do Arduino.
-Conecte o potenciômetro na placa de ensaio, utilizando jumpers para ligar o terminal 1 do potenciômetro ao pino GND do Arduino, o terminal 2 do potenciômetro ao pino 5V do Arduino e o pino limpador do potenciômetro ao pino analógico A1 do Arduino.
+Monitoramento em Tempo Real com ESP32 e STH-Comet: Fornecer uma plataforma de monitoramento em tempo real que permita aos vinicultores e gerentes das vinícolas acessar informações críticas sobre as condições de armazenamento de seus vinhos a partir de qualquer dispositivo com conexão à internet, com destaque para a integração do ESP32, do sensor SHT-Comet e do STH-Comet.
 
-Funcionamento do Sistema
-O sistema consiste em realizar a leitura da temperatura ambiente utilizando o sensor TMP36 e simular a leitura de umidade por meio do potenciômetro. O sensor de temperatura fornece leituras precisas da temperatura, enquanto o potenciômetro permite ao fazendeiro escolher entre medir a umidade do ar ou do solo, simulando os diferentes ambientes de cultivo.
+Alertas Automatizados com ESP32 e STH-Comet: Integrar o ESP32, o sensor SHT-Comet e o STH-Comet para enviar alertas automáticos por e-mail, SMS ou notificações móveis quando ocorrerem desvios significativos nas condições de armazenamento, permitindo uma resposta rápida a problemas potenciais.
 
-Resultados e Utilização
-Ao executar o sistema, é possível obter leituras da temperatura ambiente em graus Celsius utilizando o sensor TMP36. Além disso, o fazendeiro pode ajustar o potenciômetro para selecionar a medição de umidade do ar ou do solo. Os resultados fornecem informações úteis para tomar decisões relacionadas ao cultivo e ajudam a garantir condições ideais para o crescimento das plantas.
+Histórico e Análise de Dados com ESP32 e STH-Comet: Utilizar o ESP32, o sensor SHT-Comet e o STH-Comet para coletar e armazenar históricos de dados de temperatura, umidade e outros dados contextuais para análise posterior, identificando tendências e otimizando o processo de armazenamento.
 
-Discussão
-O projeto do sensor de temperatura e simulação de umidade demonstra a capacidade do Arduino em fornecer informações valiosas para a agricultura. Ao monitorar a temperatura e simular a umidade, os fazendeiros podem ajustar as condições de cultivo de acordo com as necessidades específicas das plantas, melhorando a eficiência e a produtividade do cultivo.
+Integração com Sistemas de Refrigeração com ESP32 e STH-Comet: Integrar o ESP32, o sensor SHT-Comet e o STH-Comet com os sistemas de refrigeração das vinícolas para ajustar automaticamente as configurações com base nas necessidades de resfriamento em tempo real.
 
-Conclusão
-O sistema de monitoramento de temperatura e simulação de umidade desenvolvido neste projeto é uma ferramenta útil para os fazendeiros na determinação das condições ideais para o cultivo. Com a utilização do sensor de temperatura TMP36 e o potenciômetro para simulação de umidade, é possível obter informações cruciais para a tomada de decisões informadas no cultivo agrícola.
+Redução de Custos com ESP32 e STH-Comet: Aproveitar o ESP32, o sensor SHT-Comet e o STH-Comet para contribuir para a economia de energia e custos operacionais por meio do controle eficiente da refrigeração.
+
+Componentes do Sistema com ESP32, SHT-Comet e STH-Comet:
+O sistema com ESP32, sensor SHT-Comet e componente STH-Comet é composto pelos seguintes componentes:
+
+ESP32 com Sensores: O ESP32 é o componente central que controla e coleta dados do sensor SHT-Comet e outros sensores.
+
+Sensor SHT-Comet: O sensor SHT-Comet é responsável por medir a temperatura e a umidade nas áreas de armazenamento.
+
+Sensores de Temperatura e Umidade: Outros sensores podem ser usados em conjunto com o sensor SHT-Comet para redundância e precisão.
+
+Controladores de Resfriamento: Dispositivos controlados pelo ESP32 que ajustam os sistemas de resfriamento com base nas leituras dos sensores.
+
+Plataforma de IoT com ESP32, SHT-Comet e STH-Comet: Uma plataforma central que coleta, processa e armazena dados do ESP32, do sensor SHT-Comet e do STH-Comet, permitindo o monitoramento em tempo real, o histórico de dados e o armazenamento de dados contextuais.
+
+Aplicativo Web e Aplicativo Móvel com ESP32 e STH-Comet: Interfaces de usuário amigáveis para acesso às informações e configurações do sistema, incluindo a integração com o ESP32, o sensor SHT-Comet e o STH-Comet.
+
+Notificações e Alertas com ESP32 e STH-Comet: Mecanismos de alerta que informam os usuários sobre condições críticas, com base nas leituras do ESP32, do sensor SHT-Comet e do STH-Comet.
+
+Benefícios Esperados com ESP32, SHT-Comet e STH-Comet:
+O sistema com ESP32, sensor SHT-Comet e componente STH-Comet oferece vários benefícios para as vinícolas, incluindo:
+
+Qualidade dos Vinhos: Melhoria na qualidade e preservação dos vinhos, minimizando flutuações de temperatura e umidade com o controle preciso do ESP32 e a integração dos sensores SHT-Comet e STH-Comet.
+
+Monitoramento Histórico Contextual: Capacidade de acessar e analisar dados históricos contextuais, registrados pelo STH-Comet, para tomada de decisões informadas e otimização do processo de armazenamento.
+
+Notificações em Tempo Real: Recebimento de alertas automáticos em tempo real, permitindo respostas rápidas a desvios nas condições de armazenamento detectados pelo ESP32, sensor SHT-Comet e STH-Comet.
+
+Com a integração do STH-Comet, este projeto oferece um nível avançado de análise e armazenamento de dados contextuais, proporcionando um controle rigoroso sobre as condições de armazenamento de vinhos em vinícolas.
