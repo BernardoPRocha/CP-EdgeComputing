@@ -1,4 +1,4 @@
-# GS-EdgeComputing
+# CP-EdgeComputing
 
 Relatório do Projeto: Sensor de Temperatura e Simulação de Sensor de Umidade para Agricultura
 
