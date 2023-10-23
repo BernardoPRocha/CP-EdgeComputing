@@ -1,48 +1,51 @@
 # CP-EdgeComputing
 
-Título do Projeto: Sistema de Monitoramento de Refrigeração para Vinícolas com ESP32 e STH-Comet
+Título do Projeto: Sistema de Monitoramento de Refrigeração para Vinícolas com ESP32, Sensor DHT11, Sensor LDR, SHT-Comet, STH-Comet e Integração com Freeboard
 
 Descrição do Projeto:
 
 Introdução:
-O projeto "Sistema de Monitoramento de Refrigeração para Vinícolas com ESP32 e STH-Comet" tem como objetivo proporcionar um controle eficaz e automatizado da refrigeração em vinícolas, integrando o sensor SHT-Comet e o componente STH-Comet da plataforma FIWARE. O sistema utilizará tecnologias de Internet das Coisas (IoT), sensores de temperatura, umidade e controle de resfriamento para garantir que os vinhos sejam armazenados nas condições ideais, preservando sua qualidade e sabor, enquanto o STH-Comet registra e armazena dados contextuais em larga escala.
+O projeto "Sistema de Monitoramento de Refrigeração para Vinícolas com ESP32, Sensor DHT11, Sensor LDR, SHT-Comet, STH-Comet e Integração com Freeboard" tem como objetivo proporcionar um controle eficaz e automatizado da refrigeração em vinícolas, incorporando o sensor DHT11 para medir a umidade e a temperatura, bem como o sensor LDR para medir a luminosidade. O componente STH-Comet da plataforma FIWARE é usado para registrar e armazenar dados contextuais em larga escala. Além disso, os dados coletados são enviados para a plataforma Freeboard, onde podem ser visualizados e monitorados de forma conveniente.
 
 Objetivos:
 O projeto visa atender aos seguintes objetivos:
 
-Controle Preciso da Temperatura e Umidade com ESP32 e SHT-Comet: Utilizar o ESP32 em conjunto com o sensor SHT-Comet para controlar de forma precisa e eficiente a temperatura e umidade nas áreas de armazenamento das vinícolas.
+Controle Preciso da Temperatura e Umidade com ESP32 e SHT-Comet: Utilizar o ESP32 em conjunto com os sensores DHT11 e SHT-Comet para controlar de forma precisa a temperatura e a umidade nas áreas de armazenamento das vinícolas.
 
-Monitoramento em Tempo Real com ESP32 e STH-Comet: Fornecer uma plataforma de monitoramento em tempo real que permita aos vinicultores e gerentes das vinícolas acessar informações críticas sobre as condições de armazenamento de seus vinhos a partir de qualquer dispositivo com conexão à internet, com destaque para a integração do ESP32, do sensor SHT-Comet e do STH-Comet.
+Medição de Luminosidade com ESP32 e Sensor LDR: Incorporar o sensor LDR para medir a luminosidade nas áreas de armazenamento e controlar a exposição à luz, o que é crítico para a preservação dos vinhos.
 
-Alertas Automatizados com ESP32 e STH-Comet: Integrar o ESP32, o sensor SHT-Comet e o STH-Comet para enviar alertas automáticos por e-mail, SMS ou notificações móveis quando ocorrerem desvios significativos nas condições de armazenamento, permitindo uma resposta rápida a problemas potenciais.
+Monitoramento em Tempo Real com ESP32, STH-Comet e Freeboard: Fornecer uma plataforma de monitoramento em tempo real que permita aos vinicultores e gerentes das vinícolas acessar informações críticas sobre as condições de armazenamento de seus vinhos a partir de qualquer dispositivo com conexão à internet, com destaque para a integração do ESP32, dos sensores DHT11 e LDR, do sensor SHT-Comet, do STH-Comet e da plataforma Freeboard.
 
-Histórico e Análise de Dados com ESP32 e STH-Comet: Utilizar o ESP32, o sensor SHT-Comet e o STH-Comet para coletar e armazenar históricos de dados de temperatura, umidade e outros dados contextuais para análise posterior, identificando tendências e otimizando o processo de armazenamento.
+Alertas Automatizados com ESP32 e STH-Comet: Integrar o ESP32, os sensores DHT11 e LDR, o sensor SHT-Comet e o STH-Comet para enviar alertas automáticos por e-mail, SMS ou notificações móveis quando ocorrerem desvios significativos nas condições de armazenamento, permitindo uma resposta rápida a problemas potenciais.
 
-Integração com Sistemas de Refrigeração com ESP32 e STH-Comet: Integrar o ESP32, o sensor SHT-Comet e o STH-Comet com os sistemas de refrigeração das vinícolas para ajustar automaticamente as configurações com base nas necessidades de resfriamento em tempo real.
+Histórico e Análise de Dados com ESP32 e STH-Comet: Utilizar o ESP32, os sensores DHT11 e LDR, o sensor SHT-Comet e o STH-Comet para coletar e armazenar históricos de dados de temperatura, umidade, luminosidade e outros dados contextuais para análise posterior, identificando tendências e otimizando o processo de armazenamento.
 
-Redução de Custos com ESP32 e STH-Comet: Aproveitar o ESP32, o sensor SHT-Comet e o STH-Comet para contribuir para a economia de energia e custos operacionais por meio do controle eficiente da refrigeração.
+Integração com Sistemas de Refrigeração com ESP32 e STH-Comet: Integrar o ESP32, os sensores DHT11 e LDR, o sensor SHT-Comet e o STH-Comet com os sistemas de refrigeração das vinícolas para ajustar automaticamente as configurações com base nas necessidades de resfriamento em tempo real.
 
-Componentes do Sistema com ESP32, SHT-Comet e STH-Comet:
-O sistema com ESP32, sensor SHT-Comet e componente STH-Comet é composto pelos seguintes componentes:
+Redução de Custos com ESP32 e STH-Comet: Aproveitar o ESP32, os sensores DHT11 e LDR, o sensor SHT-Comet e o STH-Comet para contribuir para a economia de energia e custos operacionais por meio do controle eficiente da refrigeração.
 
-ESP32 com Sensores: O ESP32 é o componente central que controla e coleta dados do sensor SHT-Comet e outros sensores.
+Componentes do Sistema com ESP32, Sensor DHT11, Sensor LDR, SHT-Comet, STH-Comet e Integração com Freeboard:
+O sistema com ESP32, sensores DHT11 e LDR, sensor SHT-Comet e componente STH-Comet, além da integração com o Freeboard, é composto pelos seguintes componentes:
 
-Sensor SHT-Comet: O sensor SHT-Comet é responsável por medir a temperatura e a umidade nas áreas de armazenamento.
+ESP32 com Sensores: O ESP32 é o componente central que controla e coleta dados dos sensores DHT11 e LDR, bem como do sensor SHT-Comet e de outros sensores.
 
-Sensores de Temperatura e Umidade: Outros sensores podem ser usados em conjunto com o sensor SHT-Comet para redundância e precisão.
+Sensores DHT11: Os sensores DHT11 medem a temperatura e a umidade nas áreas de armazenamento das vinícolas.
+
+Sensor LDR: O sensor LDR é responsável por medir a luminosidade nas áreas de armazenamento e controlar a exposição à luz.
+
+Sensor SHT-Comet: O sensor SHT-Comet mede a temperatura e a umidade nas áreas de armazenamento, fornecendo dados contextuais críticos.
+
+Sensores de Temperatura e Umidade: Outros sensores podem ser usados em conjunto com os sensores DHT11 para redundância e precisão.
 
 Controladores de Resfriamento: Dispositivos controlados pelo ESP32 que ajustam os sistemas de resfriamento com base nas leituras dos sensores.
 
-Plataforma de IoT com ESP32, SHT-Comet e STH-Comet: Uma plataforma central que coleta, processa e armazena dados do ESP32, do sensor SHT-Comet e do STH-Comet, permitindo o monitoramento em tempo real, o histórico de dados e o armazenamento de dados contextuais.
+Plataforma de IoT com ESP32, STH-Comet e STH-Comet: Uma plataforma central que coleta, processa e armazena dados do ESP32, dos sensores DHT11 e LDR, do sensor SHT-Comet e do STH-Comet, permitindo o monitoramento em tempo real, o histórico de dados e o armazenamento de dados contextuais.
 
-Aplicativo Web e Aplicativo Móvel com ESP32 e STH-Comet: Interfaces de usuário amigáveis para acesso às informações e configurações do sistema, incluindo a integração com o ESP32, o sensor SHT-Comet e o STH-Comet.
+Integração com Freeboard: Os dados coletados são enviados para a plataforma Freeboard, que oferece uma interface de usuário personalizada para visualização e monitoramento dos dados.
 
-Notificações e Alertas com ESP32 e STH-Comet: Mecanismos de alerta que informam os usuários sobre condições críticas, com base nas leituras do ESP32, do sensor SHT-Comet e do STH-Comet.
+Aplicativo Web e Aplicativo Móvel com ESP32 e STH-Comet: Interfaces de usuário amigáveis para acesso às informações e configurações do sistema, incluindo a integração com o ESP32, os sensores DHT11 e LDR, o sensor SHT-Comet e o STH-Comet.
 
-Benefícios Esperados com ESP32, SHT-Comet e STH-Comet:
-O sistema com ESP32, sensor SHT-Comet e componente STH-Comet oferece vários benefícios para as vinícolas, incluindo:
-
-Qualidade dos Vinhos: Melhoria na qualidade e preservação dos vinhos, minimizando flutuações de temperatura e umidade com o controle preciso do ESP32 e a integração dos sensores SHT-Comet e STH-Comet.
+Notificações e Alertas com ESP32 e STH-Comet: Mecanismos de alerta que informam os usuários sobre condições críticas, com base nas leituras do ESP32, dos sensores DHT11 e LDR, do sensor SHT-Comet e do STH-Comet.
 
 Monitoramento Histórico Contextual: Capacidade de acessar e analisar dados históricos contextuais, registrados pelo STH-Comet, para tomada de decisões informadas e otimização do processo de armazenamento.
 
