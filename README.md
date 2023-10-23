@@ -52,3 +52,5 @@ Monitoramento Histórico Contextual: Capacidade de acessar e analisar dados hist
 Notificações em Tempo Real: Recebimento de alertas automáticos em tempo real, permitindo respostas rápidas a desvios nas condições de armazenamento detectados pelo ESP32, sensor SHT-Comet e STH-Comet.
 
 Com a integração do STH-Comet, este projeto oferece um nível avançado de análise e armazenamento de dados contextuais, proporcionando um controle rigoroso sobre as condições de armazenamento de vinhos em vinícolas.
+
+Freeboard: https://freeboard.io/board/7sBfUI
